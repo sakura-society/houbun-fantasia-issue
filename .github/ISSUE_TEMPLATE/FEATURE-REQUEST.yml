@@ -48,7 +48,7 @@ body:
   - type: textarea
     id: unresolved_question
     attributes:
-      label: "Unresolved questions|"
+      label: "Unresolved questions|未解决的问题"
       description: What questions still remain unresolved ?|还有哪些问题尚未解决？
       placeholder: Identify any unresolved issues.|查明任何未解决的问题。
     validations:
