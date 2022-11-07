@@ -1,5 +1,5 @@
 name: "💡 Feature Request"
-description: Create a new ticket for a new feature request
+description: Create a new issue for a new feature request|为一个新的功能请求创建一个新的issue
 title: "💡 [REQUEST] - <title>"
 labels: [
   "question"
