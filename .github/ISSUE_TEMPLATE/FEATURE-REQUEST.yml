@@ -1,0 +1,55 @@
+name: "💡 Feature Request"
+description: Create a new ticket for a new feature request
+title: "💡 [REQUEST] - <title>"
+labels: [
+  "question"
+]
+body:
+  - type: input
+    id: start_date
+    attributes:
+      label: "Start Date|开始日期"
+      description: Start of development|开始开发
+      placeholder: "month/day/year"
+    validations:
+      required: false
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Reference Issues|参考问题"
+      description: Common issues|常见问题
+      placeholder: "#Issues IDs"
+    validations:
+      required: false
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary|总结"
+      description: Provide a brief explanation of the feature|提供功能的简要说明
+      placeholder: Describe in a few lines your feature request|用几行字描述你的功能请求
+    validations:
+      required: true
+  - type: textarea
+    id: basic_example
+    attributes:
+      label: "Basic Example|基本示例"
+      description: Indicate here some basic examples of your feature.|在此处指出功能的一些基本示例。
+      placeholder: A few specific words about your feature request.|关于你的功能请求，有几个具体的说法。
+    validations:
+      required: true
+  - type: textarea
+    id: drawbacks
+    attributes:
+      label: "Drawbacks|缺点"
+      description: What are the drawbacks/impacts of your feature request ?|您的功能请求的缺点/影响是什么？
+      placeholder: Identify the drawbacks and impacts while being neutral on your feature request|确定缺点和影响，同时对你的功能请求保持中立
+    validations:
+      required: true
+  - type: textarea
+    id: unresolved_question
+    attributes:
+      label: "Unresolved questions|"
+      description: What questions still remain unresolved ?|还有哪些问题尚未解决？
+      placeholder: Identify any unresolved issues.|查明任何未解决的问题。
+    validations:
+      required: false
