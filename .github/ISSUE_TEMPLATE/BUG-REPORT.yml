@@ -1,0 +1,73 @@
+name: "🐛 Bug Report"
+description: Create a new issue for a bug.|为一个bug创建一个新的issue。
+title: "🐛 [BUG] - <title>"
+labels: [
+  "bug"
+]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description|描述"
+      description: Please enter an explicit description of your issue|请输入对你的问题的明确描述
+      placeholder: Short and explicit description of your incident...|对你的问题进行简短而明确的描述...
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Reproduction steps|重现步骤"
+      description: Please enter an explicit description of your issue|请输入对你的问题的明确描述
+      value: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots|截图"
+      description: If applicable, add screenshots to help explain your problem.|如果适用，请添加屏幕截图以帮助解释你的问题。
+      value: |
+        ![DESCRIPTION](LINK.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs|日志"
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.|请复制并粘贴任何相关的日志输出。这将被自动格式化为代码，所以不需要代码块符号。
+      render: bash
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: "Versions|版本"
+      description: What version are you using?|你使用的版本为？
+      multiple: true
+      options:
+        - Pre-alpha|准预览版本
+        - Alpha|预览版本
+        - Beta|测试版本
+        - Released candidate|最终测试版本
+        - Gold|正式版
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: "OS|系统"
+      description: What is the impacted environment ?|受影响的系统是什么？
+      multiple: true
+      options:
+        - Windows xp/7/8/8.1
+        - Windows 10/11 +
+        - Linux
+        - Mac
+    validations:
+      required: true
